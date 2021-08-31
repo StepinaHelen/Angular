@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="field">
+    <p class="control has-icons-left">
+      <input
+        class="input"
+        type="text"
+        placeholder="Text for search"
+        [formControl]="searchControl"
+      />
+      <span class="icon is-small is-left">
+        <i class="fas fa-search"></i>
+      </span>
+    </p>
+  </div>
+  <div class="button__container">
+    <button class="button button__color button__add" [routerLink]="['./add']">
+      <i class="fas fa-plus"></i> Add course
+    </button>
+  </div>
+
+  <ul class="card-list">
+    <app-course-item
+      *ngFor="let course of courses$ | async"
+      [item]="course"
+      (edit)="handleEdit($event)"
+      (deleted)="handleDelete($event)"
+    ></app-course-item>
+  </ul>
+  <div class="not-found" *ngIf="notFound">Courses not found</div>
+  <div class="button__load_container" *ngIf="!notFound">
+    <button class="button button__load" (click)="handleLoadMore()">
+      Load more
+    </button>
+  </div>
+</div>

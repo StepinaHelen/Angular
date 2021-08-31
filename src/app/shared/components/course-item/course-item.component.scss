@@ -1,0 +1,80 @@
+.media-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+}
+
+.content {
+  max-width: 960px;
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 20px 15px;
+}
+.media-content__time {
+  display: flex;
+}
+
+.media {
+  display: block;
+}
+.media-content__time p:first-child {
+  margin-right: 25px;
+}
+
+.card-content__buttons {
+  display: flex;
+}
+.card-content__buttons button:first-child {
+  margin-right: 20px;
+}
+.media-content__time {
+  font-size: 14px;
+}
+.fas,
+.far {
+  margin-right: 5px;
+}
+.button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.button__color {
+  color: white;
+  background-color: rgb(11, 197, 243);
+}
+.media-content__title {
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+.field {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  input {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+  }
+  .icon {
+    color: rgb(73, 72, 72);
+  }
+}
+
+.control.has-icons-left .icon.is-left {
+  top: 5px;
+  left: 10px;
+}
+.button__container {
+  margin-bottom: 15px;
+  text-align: right;
+}

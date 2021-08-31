@@ -1,0 +1,51 @@
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav {
+  background-color: rgb(50, 50, 51);
+  color: white;
+}
+.active {
+  text-decoration: underline;
+}
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+.fa-play-circle {
+  font-size: 40px;
+  margin-right: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(46, 195, 34, 1) 0%,
+    rgba(45, 203, 253, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0b2349;
+  display: table;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav__title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+.nav__menu {
+  font-size: 20px;
+}
+.nav__menu a {
+  color: white;
+}
+.nav__menu p:first-child {
+  margin-right: 15px;
+}

@@ -1,0 +1,66 @@
+.form {
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.form__title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.select__authors {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  select {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+  }
+}
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #0d0e11;
+  right: 1.125em;
+  z-index: 4;
+}
+.field__duration__data {
+  width: 370px;
+}
+
+.control_container {
+  position: relative;
+}
+.control_required {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+
+  color: #636161;
+  font-size: 14px;
+}
+.label {
+  color: #535252;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.textarea:not([rows]) {
+  height: 70px;
+  min-height: 20px;
+}
+.field.is-grouped {
+  justify-content: flex-end;
+}
+.error {
+  position: absolute;
+  color: #ff2c0c;
+  font-size: 12px;
+}
+.ng-invalid.ng-touched {
+  border-color: #ff2c0c;
+}
+.ng-invalid.ng-dirty {
+  border-color: #ff2c0c;
+  box-shadow: none;
+}

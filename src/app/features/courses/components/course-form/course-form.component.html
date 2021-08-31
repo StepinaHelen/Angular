@@ -1,0 +1,123 @@
+<form class="form" action="" [formGroup]="courseForm">
+  <h2 class="form__title">New course</h2>
+  <div class="field">
+    <label class="label">Title</label>
+    <div class="control">
+      <input
+        class="input"
+        type="text"
+        placeholder="Some title..."
+        formControlName="title"
+      />
+
+      <span class="control_required" *ngIf="isRequaredTitle">*is required</span>
+      <span class="control_required" *ngIf="isValidTitle"
+        >*Title can be max 50 characters long.</span
+      >
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Description</label>
+    <div class="control">
+      <textarea
+        class="textarea"
+        placeholder="Description..."
+        formControlName="description"
+      ></textarea>
+
+      <span class="control_required" *ngIf="isRequaredDescription"
+        >*is required</span
+      >
+      <span class="control_required" *ngIf="isValidDescription"
+        >*Description can be max 50 characters long.
+      </span>
+    </div>
+  </div>
+  <div class="field__duration__data">
+    <div class="field">
+      <label class="label">Duration</label>
+
+      <div class="control control_container">
+        <input
+          class="input"
+          type="text"
+          formControlName="duration"
+          placeholder="0"
+        />
+
+        <span class="control_required" *ngIf="isRequaredDuration"
+          >*is required</span
+        >
+        <span class="control_required" *ngIf="getDuration"
+          >*The value must be a number between 1 and 600</span
+        >
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Date</label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          value="2020-02-18"
+          formControlName="date"
+          placeholder="2020-02-18"
+        />
+
+        <span class="control_required" *ngIf="isRequaredDate"
+          >*is required</span
+        >
+        <span class="control_required" *ngIf="getData"
+          >*Invalid data, valid format: YYYY-MM-DD</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="field field__authors">
+    <label class="label">Authors:</label>
+    <div class="control control__authors">
+      <div class="select select__authors">
+        <select formControlName="author">
+          <option value="author1">Author 1</option>
+          <option value="author2">Author 2</option>
+        </select>
+
+        <span
+          class="control_required"
+          *ngIf="courseForm.get('author')?.hasError('required')"
+          >*is required</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-grouped">
+    <div class="control">
+      <button typy="button" class="button is-light">Cancel</button>
+    </div>
+    <div class="control">
+      <button
+        *ngIf="!isEdit"
+        type="submit"
+        class="button is-dark"
+        (click)="onAdd()"
+        [disabled]="courseForm.invalid"
+      >
+        Save
+      </button>
+      <button
+        *ngIf="isEdit"
+        type="submit"
+        class="button is-dark"
+        (click)="onEdit()"
+        [disabled]="courseForm.invalid"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+</form>
+<!-- <div>{{ courseForm.value | json }}</div> -->

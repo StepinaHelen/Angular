@@ -1,0 +1,63 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "DUIS MOLLIT REPREHENDERIT AD",
+      "duration": "100min",
+      "date": "2021-08-03",
+      "description": " Est minim ea aute sunt laborum minim eu excepteur. Culpa sint exercitation mollit enim ad culpa aliquip laborum cillum. Dolor officia culpa labore ex elusmod ut est ea voluptate ea nostrud."
+    },
+    {
+      "id": 2,
+      "title": "MAGNA EXCEPTEUR AUTE DESERUNT",
+      "duration": "327min",
+      "date": "2021-06-22",
+      "description": "Sunt culpa officia minim commodo eiusmod irure sunt nostrud. Mollit aliquip id occaecat officia proident anim dolor officia qui voluptate consectetur laborum. Duis incididunt culpa aliqua molit do fugiat ea dolor mollit irure Lorem tempor."
+    },
+    {
+      "id": 3,
+      "title": "MAGNA EXCEPTEUR AUTE DESERUNT",
+      "duration": "11min",
+      "date": "2021-01-05",
+      "description": "Sunt culpa officia minim commodo eiusmod irure sunt nostrud. Mollit aliquip id occaecat officia proident anim dolor officia qui voluptate consectetur laborum. Duis incididunt culpa aliqua molit do fugiat ea dolor mollit irure Lorem tempor."
+    },
+    {
+      "id": 4,
+      "title": "HTML, CSS",
+      "duration": "237min",
+      "date": "2021-07-28",
+      "description": "In this course, you will learn how to make real projects with the same level of difficulty as in the industry. And you will do them correctly so that after training you will give a high-level result, for which companies are willing to pay."
+    },
+    {
+      "id": 5,
+      "title": "JavaScript",
+      "duration": "530min",
+      "date": "2021-07-09",
+      "description": "The course is designed for in-depth study of the JavaScript programming language, one of the most popular development languages. It is most widely used in browsers to give interactivity to web pages."
+    },
+    {
+      "title": "Java Course",
+      "description": "Understand complex Java features ",
+      "duration": "122",
+      "date": "2021-08-09",
+      "author": "author2",
+      "id": 7
+    },
+    {
+      "title": "New Course",
+      "description": "Description",
+      "duration": "555",
+      "date": "2021-08-12",
+      "author": "author1",
+      "id": 8
+    },
+    {
+      "title": "New course3",
+      "description": "Description",
+      "duration": "80",
+      "date": "2021-08-01",
+      "author": "author1",
+      "id": 10
+    }
+  ]
+}

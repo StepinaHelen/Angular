@@ -1,0 +1,60 @@
+.fas,
+.far {
+  margin-right: 5px;
+}
+.button {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.button__color {
+  color: white;
+  background-color: rgb(11, 197, 243);
+}
+
+.field {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  input {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+  }
+  .icon {
+    color: rgb(73, 72, 72);
+  }
+}
+.fa-search {
+  transform: rotate(-270deg);
+  font-size: 20px;
+  bottom: 0px;
+}
+.control.has-icons-left .icon.is-left {
+  top: 5px;
+  left: 10px;
+}
+.button__container {
+  margin-bottom: 15px;
+  text-align: right;
+}
+.button__load {
+  width: 100%;
+  color: blue;
+  border: none;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.button__load_container {
+  margin-top: 15px;
+}
+.button__add {
+  width: 170px;
+}
+.not-found {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 300px;
+  text-align: center;
+}

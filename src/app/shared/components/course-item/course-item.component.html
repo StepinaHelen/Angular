@@ -1,0 +1,28 @@
+<li class="card" appBorder defaultDate="{{ item.date }}">
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content">
+        <h3 class="media-content__title">{{ item.title }}</h3>
+        <div class="media-content__time">
+          <p><i class="far fa-clock"></i>{{ item.duration | converting }}</p>
+
+          <p>
+            <i class="fas fa-calendar-alt"></i
+            >{{ item.date | date: "d MMM, y" }}
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        {{ item.description }}
+      </div>
+    </div>
+    <div class="card-content__buttons">
+      <button class="button button__color" (click)="onEdit()">
+        <i class="fas fa-pen"></i> Edit
+      </button>
+      <button class="button button__color" (click)="handleDelete()">
+        <i class="fas fa-trash"></i> Delete
+      </button>
+    </div>
+  </div>
+</li>

@@ -1,0 +1,7 @@
+<div class="container">
+  <app-course-form
+    [course]="coursesService.course$ | async"
+    (edit)="editHandler($event)"
+    (add)="addHandler($event)"
+  ></app-course-form>
+</div>
